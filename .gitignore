@@ -30,3 +30,4 @@
 *.exe
 *.out
 *.app
+递归/.DS_Store
