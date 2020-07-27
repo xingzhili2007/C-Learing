@@ -1,0 +1,54 @@
+Description
+
+A team of k (1 <= K <= 100) workers should paint a fence which contains N (1 <= N <= 16 000) planks numbered from 1 to N from left to right. Each worker i (1 <= i <= K) should sit in front of the plank Si and he may paint only a compact interval (this means that the planks from the interval should be consecutive). This interval should contain the Si plank. Also a worker should not paint more than Li planks and for each painted plank he should receive Pi $ (1 <= Pi <= 10 000). A plank should be painted by no more than one worker. All the numbers Si should be distinct. 
+
+Being the team's leader you want to determine for each worker the interval that he should paint, knowing that the total income should be maximal. The total income represents the sum of the workers personal income. 
+
+Write a program that determines the total maximal income obtained by the K workers. 
+Input
+
+The input contains: 
+Input 
+
+N K 
+L1 P1 S1 
+L2 P2 S2 
+... 
+LK PK SK 
+
+Semnification 
+
+N -the number of the planks; K ? the number of the workers 
+Li -the maximal number of planks that can be painted by worker i 
+Pi -the sum received by worker i for a painted plank 
+Si -the plank in front of which sits the worker i 
+Output
+
+The output contains a single integer, the total maximal income.
+Sample Input
+
+8 4
+3 2 2
+3 2 3
+3 3 5
+1 1 7 
+Sample Output
+
+17
+Hint
+
+Explanation of the sample: 
+
+the worker 1 paints the interval [1, 2]; 
+
+the worker 2 paints the interval [3, 4]; 
+
+the worker 3 paints the interval [5, 7]; 
+
+the worker 4 does not paint any plank 
+Source
+
+Romania OI 2002
+
+
+题意：长度为n的墙，k个粉刷匠。第 i 个粉刷匠在 si ，他最多可以刷包含 si 的长度为 li 的区间，他刷单位长度获得钱 pi 。求k个粉刷匠最多能赚多少钱？
